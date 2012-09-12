@@ -49,8 +49,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DocumentParser.cs" />
-    <Compile Include="DTO\DocumentComment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +56,12 @@
     <None Include="Template\Comments.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentCommentParser.Logic\DocumentCommentParser.Logic.csproj">
+      <Project>{2B47242A-9474-40DC-99E1-8A7809C86948}</Project>
+      <Name>DocumentCommentParser.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

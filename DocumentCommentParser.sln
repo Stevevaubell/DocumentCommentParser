@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentCommentParser.TestConsole", "DocumentCommentParser.Console\DocumentCommentParser.TestConsole.csproj", "{9757DAA7-B04F-4FEA-A5BC-5957302E1D9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{0A8499CE-51AC-4025-A740-39473091DC57}"
@@ -10,7 +10,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencie
 		Dependencies\WindowsBase.dll = Dependencies\WindowsBase.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentCommentParser.Logic", "DocumentCommentParser.Logic\DocumentCommentParser.Logic.csproj", "{2B47242A-9474-40DC-99E1-8A7809C86948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentCommentParser.Test", "DocumentCommentParser.Test\DocumentCommentParser.Test.csproj", "{C9A85DD6-EB7E-4929-8783-8A6A8BD933DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88C55F5C-C960-49BF-AF33-7466E8375753}"
+	ProjectSection(SolutionItems) = preProject
+		DocumentCommentParser.vsmdi = DocumentCommentParser.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DocumentCommentParser.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -20,6 +34,14 @@ Global
 		{9757DAA7-B04F-4FEA-A5BC-5957302E1D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9757DAA7-B04F-4FEA-A5BC-5957302E1D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9757DAA7-B04F-4FEA-A5BC-5957302E1D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B47242A-9474-40DC-99E1-8A7809C86948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B47242A-9474-40DC-99E1-8A7809C86948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B47242A-9474-40DC-99E1-8A7809C86948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B47242A-9474-40DC-99E1-8A7809C86948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A85DD6-EB7E-4929-8783-8A6A8BD933DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A85DD6-EB7E-4929-8783-8A6A8BD933DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A85DD6-EB7E-4929-8783-8A6A8BD933DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A85DD6-EB7E-4929-8783-8A6A8BD933DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
